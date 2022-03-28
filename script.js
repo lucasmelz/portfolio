@@ -122,12 +122,6 @@ function resetAnimation(){
         );
         bird1.setAttribute("id", "bird1");
         bird1.setAttribute("d", bird1path);
-        if(darkMode){
-            bird1.setAttribute("fill", "white");
-        }
-        else{
-            bird1.setAttribute("fill", "black");
-        }
         svg.appendChild(bird1);
     }
 }
