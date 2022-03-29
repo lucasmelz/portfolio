@@ -231,11 +231,13 @@ h2:before {
 
 }
 
+
 @media (max-width:550px){
     #profile{
         max-width:15%;
-        left: 77vw;
+        left: 80vw;
     }
+    
     #runningEventsGif, #copVsBlockGif{
         width:65vw;
         margin-left:15%;
@@ -277,6 +279,10 @@ h2:before {
         top:40px;
         left:58px;
     }
+
+    h1{
+        font-size:1.9em;
+    }
 }
 
 @media (max-width:400px){
@@ -303,11 +309,32 @@ h2:before {
     }
 
 
+    h1{
+        font-size:1.8em;
+    }
+
+    h2{
+        font-size:1.4em;
+    }
+
+    .mini-list{
+        font-size:108%;
+    }
+
+    .mini-type{
+        font-size:105%;
+    }
+
+    .mini-data{
+        font-size:108%;
+    }
+
+
 }
 
 @media (max-width:370px){
     #profile{
-        left:90vw;
+        left:80vw;
         max-width:19%;
     }
     #bricks{
@@ -316,6 +343,35 @@ h2:before {
     #mosaicRepresentation{
         width:25vw;
     }
+
+    h1{
+        font-size:1.7em;
+    }
+
+    h2{
+        font-size:1.4em;
+    }
+
+    .mini-list{
+        font-size:105%;
+    }
+
+    .mini-type{
+        font-size:100%;
+    }
+
+    .mini-data{
+        font-size:100%;
+    }
+
+    #languageSelector{
+        left:48px;
+        top:32px;
+    }
+
+
+
+
 }
 
 @media (max-width:340px){
@@ -338,7 +394,7 @@ h2:before {
     }
 
     .mini-type{
-        font-size:95%;
+        font-size:98%;
     }
 
     .imageCard p{
@@ -346,7 +402,7 @@ h2:before {
     }
 
     .mini-data{
-        font-size:90%;
+        font-size:98%;
     }
 
     #languageSelector{
