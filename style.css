@@ -110,7 +110,8 @@ h2:before {
 
 .mini-data{
     text-justify: inter-word;
-    font-size:110%;
+    font-size:100%;
+    margin-top:5px;
 }
 
 #logos a, #logos a:visited{
