@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Courier, monospace;
+    padding-left: 15%;
+    width: 74%;
+    text-align: justify;
+    line-height: 1.5;
+    color: black;
+    background: white;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-variant: small-caps;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+h2:hover {
+    padding-left: 6%;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+h1 {
+    margin-top: 0em;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+h1:before {
+    content: "# ";
+    color: gainsboro;
+}
+
+h2:before {
+    content: "## ";
+    color: gainsboro;
+}
+
+#languageSelector {
+    font-size: small;
+}
+
+#languageSelector a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+#languageSelector a:visited {
+    text-decoration: none;
+}
+
+#languageSelector a:hover {
+    text-decoration: underline;
+}
+
+
+#projectsDescription .mini-type {
+    cursor: pointer;
+}
+
+#projectsDescription .mini-type:before {
+    content: "# ";
+    color: gainsboro;
+}
+
+#projectsDescription .mini-type:hover {
+    text-shadow: 2px 2px rgb(182, 178, 178);
+}
+
+
+#projectsDescription li {
+    margin-bottom: 15px;
+}
+
+#bioDescription,
+#coursesDescription,
+#projectsDescription
+{
+    display: none;
+}
+
+#profile {
+    position: fixed;
+    left: 75%;
+    top: 2%;
+    max-width: 12%;
+    height: auto;
+    border-collapse: separate;
+    border-radius: 32%;
+}
+
+.mini-list {
+    padding-left: 2%;
+    list-style-type: none;
+    line-height: 1;
+    font-size: 120%;
+}
+
+.mini-type {
+    font-weight: bold;
+}
+
+.mini-data {
+    text-justify: inter-word;
+    font-size: 110%;
+}
+
+#logos a,
+#logos a:visited {
+    text-decoration: none;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.imageCard {
+    width: 310px;
+    text-align: center;
+    font-size: 90%;
+    margin: 10px 10px 0px;
+}
+
+.imageCard p {
+    text-align: justify;
+    font-size: 88%;
+}
+
+#mosaicDescription {
+    margin-top: -10px;
+}
+
+#combinationsWhole {
+    width: 45vw;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#mosaicDescription b {
+    font-size: 90%;
+}
+
+#bricks {
+    width: 22vw;
+    height: auto;
+    margin-top: 10px;
+}
+
+#mosaicRepresentation {
+    width: 10vw;
+    height: auto;
+}
+
+#it {
+    font-style: italic;
+}
+
+#runningEventsGif,
+#copVsBlockGif,
+#veganisaurusGif,
+#veganisaurusApi,
+#pongGameGif,
+#model3dGif {
+    width: 28vw;
+    height: auto;
+    margin: -10px 10px 5px 23.5%;
+}
+
+#runningEventsGif{
+    margin-top:0;
+}
+
+#veganisaurusGif,
+#veganisaurusApi,
+#pongGameGif,
+#model3dGif, #copVsBlockGif{
+    margin-top: 8px;
+    display:block;
+}
+
+#copVsBlockGif {
+    margin-top: 5px;
+}
+
+#bird {
+    position: fixed;
+    bottom: 0%;
+    left: 5.5%;
+    overflow: visible;
+    cursor: pointer;
+}
+
+#logos img {
+    width: 40px;
+    height: auto;
+}
+
+#logos {
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width: 29vw;
+        height: auto;
+        margin:8px 10px 5px 25%;
+    }
+
+    #runningEventsGif{
+        margin-top:0px;
+    }
+}
+
+@media (max-width: 800px){
+
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width:33vw;
+    }
+}
+
+@media (max-width: 720px) {
+    #profile {
+        position: absolute;
+        left: 80vw;
+        max-width: 13%;
+        top: 1%;
+    }
+
+    body {
+        padding-left: 4%;
+        width: 92%;
+        position: relative;
+    }
+
+    #combinationsWhole {
+        width: 65vw;
+    }
+
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width: 55vw;
+        margin: 5px 5px 5px 20%;
+    }
+
+    #bird {
+        position: absolute;
+        bottom: -25vh;
+    }
+
+    #mosaicRepresentation {
+        width: 13vw;
+        height: auto;
+    }
+
+    #bricks {
+        width: 26vw;
+        height: auto;
+    }
+
+    .imageCard p {
+        font-size: 85%;
+    }
+
+}
+
+@media (max-width:550px) {
+    #profile {
+        max-width: 15%;
+        left: 80vw;
+    }
+   
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width: 65vw;
+        margin-left: 15%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #combinationsWhole {
+        width: 80%;
+    }
+
+    #bricks {
+        width: 30vw;
+    }
+
+    #mosaicRepresentation {
+        width: 18vw;
+    }
+
+
+}
+
+@media (max-width:470px) {
+    #profile {
+        max-width: 17%;
+    }
+
+    #combinationsWhole {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #languageSelector {
+        position: absolute;
+        top: 40px;
+        left: 58px;
+    }
+
+    h1 {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width:400px) {
+    #profile {
+        left: 82vw;
+        max-width: 18%;
+        top: 1%;
+    }
+    
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width: 80vw;
+        margin-left: 5%;
+    }
+
+    #bricks {
+        width: 33vw;
+    }
+
+    #mosaicRepresentation {
+        width: 20vw;
+    }
+
+
+    #combinationsWhole {
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .mini-list {
+        font-size: 108%;
+    }
+
+    .mini-type {
+        font-size: 105%;
+    }
+
+    .mini-data {
+        font-size: 108%;
+    }
+
+
+}
+
+@media (max-width:370px) {
+
+    #runningEventsGif,
+    #copVsBlockGif,
+    #veganisaurusGif,
+    #veganisaurusApi,
+    #pongGameGif,
+    #model3dGif {
+        width: 80vw;
+        margin-left: 4%;
+    }
+
+
+    #profile {
+        left: 80vw;
+        max-width: 19%;
+    }
+
+    #bricks {
+        width: 35vw;
+    }
+
+    #mosaicRepresentation {
+        width: 25vw;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .mini-list {
+        font-size: 105%;
+    }
+
+    .mini-type {
+        font-size: 100%;
+    }
+
+    .mini-data {
+        font-size: 100%;
+    }
+
+    #languageSelector {
+        left: 48px;
+        top: 32px;
+    }
+
+
+
+
+}
+
+@media (max-width:340px) {
+    #profile {
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .mini-list {
+        font-size: 100%;
+    }
+
+    .mini-type {
+        font-size: 98%;
+    }
+
+    .imageCard p {
+        margin: 10px;
+    }
+
+    .mini-data {
+        font-size: 98%;
+    }
+
+    #languageSelector {
+        left: 42px;
+        top: 30px;
+    }
+}
