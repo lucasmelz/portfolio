@@ -75,10 +75,18 @@ h2:before {
     cursor: pointer;
 }
 
-#projectsDescription .mini-type:before {
+#projectsDescription .mini-type:before , #professionalXpDescription .mini-type:before {
     content: "# ";
     color: gainsboro;
 }
+
+
+#mindera{
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+
 
 #projectsDescription .mini-type:hover {
     text-shadow: 2px 2px rgb(182, 178, 178);
@@ -91,6 +99,7 @@ h2:before {
 
 #bioDescription,
 #coursesDescription,
+#professionalXpDescription,
 #projectsDescription
 {
     display: none;

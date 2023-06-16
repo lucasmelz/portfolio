@@ -139,6 +139,19 @@ document.querySelector('#bio').addEventListener("click", () =>
     }
 });
 
+document.querySelector('#professionalXp').addEventListener("click", () =>
+{
+    let professionalXpDescription = document.querySelector('#professionalXpDescription');
+    if(professionalXpDescription.classList.contains("active")) {
+        professionalXpDescription.style.display = 'none';
+        professionalXpDescription.className = "mini-list";
+    }
+    else{
+        professionalXpDescription.style.display = 'inherit';
+        professionalXpDescription.className += " active";
+    }
+});
+
 document.querySelector('#courses').addEventListener("click", () =>
 {
     let coursesDescription = document.querySelector('#coursesDescription');
